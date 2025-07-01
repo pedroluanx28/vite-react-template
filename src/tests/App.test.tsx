@@ -6,5 +6,5 @@ import { App } from "@/App.tsx";
 it("should be show App", async () => {
 	render(<App />);
 
-	expect(screen.getByText("Ap")).toBeInTheDocument();
+	expect(screen.getByText("App")).toBeInTheDocument();
 });
