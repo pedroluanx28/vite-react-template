@@ -19,10 +19,5 @@ export default tseslint.config([
 			ecmaVersion: 2020,
 			globals: globals.browser
 		}
-	},
-	{
-		files: ["**/*.test.tsx"],
-		plugins: ["testing-library", "jest-dom"],
-		extends: ["plugin:testing-library/react", "plugin:jest-dom/recommended"]
 	}
 ]);

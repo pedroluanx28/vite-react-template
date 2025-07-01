@@ -1,10 +1,10 @@
-import {render, screen} from "@testing-library/react";
-import {it, expect} from "vitest";
+import { render, screen } from "@testing-library/react";
+import { it, expect } from "vitest";
 
-import {App} from "@/App.tsx";
+import { App } from "@/App.tsx";
 
 it("should be show App", async () => {
-    render(<App/>);
+	render(<App />);
 
-    expect(screen.getByText("App")).toBeInTheDocument();
+	expect(screen.getByText("Ap")).toBeInTheDocument();
 });
