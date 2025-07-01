@@ -7,27 +7,15 @@ on:
     branches: [ "main" ]
 
 jobs:
-  tests:
+  tests_and_linter:
     runs-on: ubuntu-latest
     steps:
-    - name: Tests
+    - name: Tests and Linter
       uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 22
     - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js 22
     
       run: |
-        npm install && npm run test
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Lint javascript
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-    
-      run: |
-        npm run lint
+        npm install && npm run test && npm run lint
