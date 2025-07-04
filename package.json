@@ -10,7 +10,8 @@
 		"preview": "vite preview",
 		"format": "prettier . --write",
 		"test": "vitest",
-		"cy:open": "cypress open"
+		"cy:open": "cypress open",
+		"cy:run": "cypress run"
 	},
 	"dependencies": {
 		"@types/node": "^24.0.8",
