@@ -3,7 +3,7 @@ This project was made to be a template for a React application with vite. Everyt
 
 ## 📦 Installation Steps
 
-Go to you projects folder
+Go to your projects folder
 
 ```shell
 git clone https://github.com/pedroluanx28/vite-react-template.git
