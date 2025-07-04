@@ -11,8 +11,17 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["src/*"]
+			"@/*": [
+				"src/*"
+			]
 		},
-		"types": ["vitest/globals"]
-	}
+		"module": "ES2015",
+		"types": [
+			"vitest/globals"
+		]
+	},
+	"include": [
+		"cypress",
+		"cypress.config.ts"
+	]
 }
