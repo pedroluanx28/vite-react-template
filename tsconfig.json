@@ -14,7 +14,7 @@
 			"@/*": ["src/*"]
 		},
 		"module": "ES2015",
-		"types": ["vitest/globals"]
+		"types": ["vitest/globals"],
 	},
 	"include": ["cypress", "cypress.config.ts"]
 }
